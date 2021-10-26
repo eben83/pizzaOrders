@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaOrders", "PizzaOrders\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaOrders.Data", "PizzaOrders.Data\PizzaOrders.Data.csproj", "{AC57CCB4-458D-453B-AA02-84C5C62A535F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaOrder.Core", "PizzaOrder.Core\PizzaOrder.Core.csproj", "{BB0D49E9-428B-42E4-8C17-14840B3CBF07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{AC57CCB4-458D-453B-AA02-84C5C62A535F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC57CCB4-458D-453B-AA02-84C5C62A535F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC57CCB4-458D-453B-AA02-84C5C62A535F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0D49E9-428B-42E4-8C17-14840B3CBF07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0D49E9-428B-42E4-8C17-14840B3CBF07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0D49E9-428B-42E4-8C17-14840B3CBF07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0D49E9-428B-42E4-8C17-14840B3CBF07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
