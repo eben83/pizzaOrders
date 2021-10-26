@@ -9,6 +9,10 @@ C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\bin\Debug\net5.0\ref\PizzaOrders
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\bin\Debug\net5.0\PizzaOrders.pdb
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\bin\Debug\net5.0\PizzaOrders.Views.dll
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\bin\Debug\net5.0\PizzaOrders.Views.pdb
+C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.csprojAssemblyReference.cache
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.AssemblyInfoInputs.cache
@@ -33,8 +37,8 @@ C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\Razor\Views\_Vi
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.RazorTargetAssemblyInfo.cache
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.RazorTargetAssemblyInfo.cs
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.Views.pdb
+C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.csproj.CopyComplete
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.dll
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\ref\PizzaOrders.dll
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.pdb
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.genruntimeconfig.cache
-C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.csproj.CopyComplete
