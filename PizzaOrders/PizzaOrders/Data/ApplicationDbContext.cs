@@ -14,8 +14,9 @@ namespace PizzaOrders.Data
         {
             
         }
-
-        //this prop will push to the db
+        
+        //This prop represents a table in the db or some other form of a collection of records of type
+        //Employee depending on the type of DB Engine :D
         public DbSet<Employees> Employees { get; set; }
     }
 }
