@@ -28,5 +28,11 @@ namespace PizzaOrders.Controllers
             IEnumerable<Employees> objectList = _db.Employees;
             return View(objectList);
         }
+
+        //GET - CREATE
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
