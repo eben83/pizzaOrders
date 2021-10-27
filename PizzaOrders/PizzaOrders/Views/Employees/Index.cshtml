@@ -1,10 +1,43 @@
-﻿@{
+﻿@model IEnumerable<Employees>
+
+@{
     ViewData["Title"] = "Employee Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Employee</h1>
+    <h1 class="display-4">Employee List</h1>
     
-    <p>This will be where you are able to add an employee</p>
-
+    <div class="flex-row">
+        <div class="justify-content-between">
+            <div class="btn btn-primary">Add Employee</div>
+        </div>
+    </div>
 </div>
+@if (Model.Count() > 0)
+{
+    <div class="container">
+        <div class="d-flex justify-content-center">
+                @foreach (var item in Model)
+                {
+                    <div class="card m-5" style="width: 18rem">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Name</h5>
+                            <div class="card-text">@item.Department</div>
+                            <div class="d-flex justify-content-center">
+                                <div class="p-3">Edit</div>
+                                <div class="p-3">Delete</div>
+                            </div>
+                        </div>
+                    </div>
+                }
+        </div>
+    </div>
+}
+else
+{
+    <div class="container">
+        <div class="text-center mt-4">
+            <h1 class="text-danger">There are no Employees add yet</h1>
+        </div>
+    </div>
+}
