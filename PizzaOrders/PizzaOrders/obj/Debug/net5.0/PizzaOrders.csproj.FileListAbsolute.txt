@@ -71,3 +71,4 @@ C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.dll
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\ref\PizzaOrders.dll
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.pdb
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.genruntimeconfig.cache
+C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\Razor\Views\Employees\Create.cshtml.g.cs
