@@ -2,7 +2,7 @@
 
 namespace PizzaOrders.Models
 {
-    public class Employee
+    public class Employees
     {
         [Key]//primary key- attribute
         public int Id { get; set; }
