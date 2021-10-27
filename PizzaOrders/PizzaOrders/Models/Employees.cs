@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace PizzaOrders.Models
 {
@@ -9,6 +10,8 @@ namespace PizzaOrders.Models
 
         public string Name { get; set; }
 
+        [DisplayName("Dep")]
+        //this TAG helper will be the display
         public string Department { get; set; }
     }
 }
