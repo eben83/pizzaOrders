@@ -14,10 +14,27 @@ namespace PizzaOrders.Data
         {
             
         }
-        
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Employee>()
+                .ToTable("Employee");
+
+            modelBuilder.Entity<Employee>()
+                .Property(a => a.Name)
+                .HasMaxLength(100);
+
+            modelBuilder.Entity<Employee>()
+                .HasMany(a => a.Orders)
+                .WithOne(a => a.Employee)
+                .HasForeignKey(a => a.EmployeeId);
+                
+            base.OnModelCreating(modelBuilder);
+        }
+
         //This prop represents a table in the db or some other form of a collection of records of type
         //Employee depending on the type of DB Engine :D
-        public DbSet<Employees> Employees { get; set; }
-        public DbSet<Orders> Orders { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Order> Orders { get; set; }
     }
 }
