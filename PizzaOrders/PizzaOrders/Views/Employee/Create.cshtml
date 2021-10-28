@@ -1,15 +1,15 @@
-﻿@model PizzaOrders.Models.Orders;
+﻿@model PizzaOrders.Models.Employee
 
 @{
-    ViewBag.Title = "Order";
+    ViewData["Title"] = "Add Employee";
 }
 
+<form method="post" asp-action="Create">
     <div class="form-group text-center">
-        <h1 class="display-4">Place Your Orders!</h1>
+        <h1 class="display-4">Create Employee</h1>
     </div>
-
-
-<div class="col-8 mx-auto pt-5">
+    
+    <div class="col-8 mx-auto pt-5">
         <div>
             <div class="form-group row">
                 <div class="col-4">
@@ -17,32 +17,23 @@
                     <label asp-for="Name"></label>
                 </div>
                 <div class="col-8">
-                    @* @foreach (var item in Model.Name) *@
-                    @* { *@
-                    <select asp-for="Name" class="form-control"></select>
-                    @* } *@
+                    <input asp-for="Name" class="form-control">
                 </div>
                     </div>
             <div class="form-group row">
                 <div class="col-4">
-                    <label asp-for="Pizza"></label>
+                    <label asp-for="Department"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="Pizza" class="form-control">
-                </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-4">
-                    <label asp-for="Drink"></label>
-                </div>
-                <div class="col-8">
-                    <input asp-for="Drink" class="form-control">
+                    <input asp-for="Department" class="form-control">
                 </div>
             </div>
             <div class="form-group row d-flex justify-content-around">
                 <div class="d-flex ">
                     <input type="submit" value="Create" class="btn btn-primary w-100 mr-5"/>
+                    <a asp-action="Index" class="btn btn-primary text-white w-100" >Back</a>
                 </div>
             </div>
         </div>
     </div>
+</form>
