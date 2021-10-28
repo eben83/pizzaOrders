@@ -55,9 +55,11 @@ C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\scopedcss\bundl
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.TagHelpers.input.cache
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.TagHelpers.output.cache
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.RazorCoreGenerate.cache
-C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\Razor\Views\Employees\Index.cshtml.g.cs
+C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\Razor\Views\Employee\Create.cshtml.g.cs
+C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\Razor\Views\Employee\Index.cshtml.g.cs
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\Razor\Views\Order\Create.cshtml.g.cs
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -71,5 +73,3 @@ C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.dll
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\ref\PizzaOrders.dll
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.pdb
 C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\PizzaOrders.genruntimeconfig.cache
-C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\Razor\Views\Employees\Create.cshtml.g.cs
-C:\Projects\pizzaOrders\PizzaOrders\PizzaOrders\obj\Debug\net5.0\Razor\Views\Orders\Create.cshtml.g.cs
