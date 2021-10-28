@@ -6,7 +6,7 @@ using PizzaOrders.Models;
 
 namespace PizzaOrders.Controllers
 {
-    public class EmployeesController : Controller
+    public class EmployeeController : Controller
     {
         //prop 
         private readonly ApplicationDbContext _db;
@@ -14,7 +14,7 @@ namespace PizzaOrders.Controllers
         //ctor- to populate the above prop 
         //this will pull from the DbContext container
         //you can just add the Class or Interface as a parameter with a name
-        public EmployeesController(ApplicationDbContext db)
+        public EmployeeController(ApplicationDbContext db)
         {
             //local _db will be assigned to the DbContext
             //(ApplicationDbContext db) object will have an instance of the DbContext
@@ -23,9 +23,9 @@ namespace PizzaOrders.Controllers
         }
         public IActionResult Index()
         {
-            //making an IEnumerable to display the list of Employees
+            //making an IEnumerable to display the list of Employee
             //
-            IEnumerable<Employees> objectList = _db.Employees;
+            IEnumerable<Employee> objectList = _db.Employees;
             return View(objectList);
         }
 
@@ -38,7 +38,7 @@ namespace PizzaOrders.Controllers
         //POST - CREATE
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Employees obj)
+        public IActionResult Create(Employee obj)
         {
             _db.Add(obj);
             _db.SaveChanges();
