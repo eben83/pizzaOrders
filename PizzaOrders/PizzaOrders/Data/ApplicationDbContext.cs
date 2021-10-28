@@ -18,5 +18,6 @@ namespace PizzaOrders.Data
         //This prop represents a table in the db or some other form of a collection of records of type
         //Employee depending on the type of DB Engine :D
         public DbSet<Employees> Employees { get; set; }
+        public DbSet<Orders> Orders { get; set; }
     }
 }
