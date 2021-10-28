@@ -19,9 +19,9 @@ namespace PizzaOrders.Migrations
                 .HasAnnotation("ProductVersion", "5.0.11")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("PizzaOrders.Models.Employees", b =>
+            modelBuilder.Entity("PizzaOrders.Models.Employee", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("EmployeeId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -30,14 +30,15 @@ namespace PizzaOrders.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
-                    b.HasKey("Id");
+                    b.HasKey("EmployeeId");
 
-                    b.ToTable("Employees");
+                    b.ToTable("Employee");
                 });
 
-            modelBuilder.Entity("PizzaOrders.Models.Orders", b =>
+            modelBuilder.Entity("PizzaOrders.Models.Order", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -50,7 +51,7 @@ namespace PizzaOrders.Migrations
                     b.Property<string>("Drink")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("NameId")
+                    b.Property<int>("EmployeeId")
                         .HasColumnType("int");
 
                     b.Property<string>("Pizza")
@@ -58,18 +59,25 @@ namespace PizzaOrders.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("NameId");
+                    b.HasIndex("EmployeeId");
 
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("PizzaOrders.Models.Orders", b =>
+            modelBuilder.Entity("PizzaOrders.Models.Order", b =>
                 {
-                    b.HasOne("PizzaOrders.Models.Employees", "Name")
-                        .WithMany()
-                        .HasForeignKey("NameId");
+                    b.HasOne("PizzaOrders.Models.Employee", "Employee")
+                        .WithMany("Orders")
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("Name");
+                    b.Navigation("Employee");
+                });
+
+            modelBuilder.Entity("PizzaOrders.Models.Employee", b =>
+                {
+                    b.Navigation("Orders");
                 });
 #pragma warning restore 612, 618
         }
