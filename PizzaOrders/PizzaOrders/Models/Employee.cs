@@ -16,6 +16,7 @@ namespace PizzaOrders.Models
     //this TAG helper will be the display
     public string Department { get; set; }
 
-    public virtual ICollection<Order> Orders { get; set; }
+    public virtual List<Order> Orders { get; set; }
+
     }
 }
