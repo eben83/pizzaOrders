@@ -18,7 +18,7 @@ namespace PizzaOrders.Models
         public string Drink { get; set; }
         
         public int EmployeeId { get; set; }
-        public virtual Employee Employee { get; set; }
+        public Employee Employee { get; set; }
 
         public void Test()
         {
