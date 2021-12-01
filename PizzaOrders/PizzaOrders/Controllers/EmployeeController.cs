@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PizzaOrders.Data;
 using PizzaOrders.Models;
 
@@ -41,6 +42,89 @@ namespace PizzaOrders.Controllers
         public IActionResult Create(Employee obj)
         {
             _db.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        
+        
+        //GET - EDIT
+        public ActionResult Edit(int Id)
+        {
+            //the ID- passed in from the ASP-ROUTE-ID tag helper
+            
+            //this just checks if the id is not null or 0
+            if (Id == null || Id == 0)
+            {
+                return NotFound();
+            }
+            
+            //get the data from the db, this will just find the employee with the id that was passed in
+            var employee = _db.Employees.Find(Id);
+            
+            // you can do another check to see if the record was found or not
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            
+            //if the record was found, return that to the view
+            return View(employee);
+
+        }
+
+        //POST - EDIT
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(Employee employee)
+        {
+            if (ModelState.IsValid)
+            {
+                _db.Update(employee);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(employee);
+
+        }
+        
+        
+        
+        //GET- DELETE
+        public ActionResult Delete(int? Id)
+        {
+            //the ID- passed in from the ASP-ROUTE-ID tag helper on the index page
+            
+            //get the data from the db, this will just find the employee with the id that was passed in
+            var employee = _db.Employees.Find(Id);
+            
+            // you can do another check to see if the record was found or not
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            
+            //if the record was found, return that to the view
+            //return View(employee);
+            
+            _db.Remove(employee);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        //This is not working????
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteEmployee(int? id)
+        {
+            var employee = _db.Employees.Find(id);
+
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            _db.Remove(employee.EmployeeId);
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
