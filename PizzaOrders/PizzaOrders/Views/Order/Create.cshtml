@@ -1,7 +1,7 @@
 ﻿@model PizzaOrders.Models.Order;
 
 @{
-    ViewData["Title"] = "Order";
+    ViewData["Title"] = "Add Order";
 }
 
 <form method="post" asp-action="Create">
@@ -21,10 +21,12 @@
 
                 <div class="col-4">
                     @*TAG HELPER- label*@
-                    @* <label asp-for="EmployeeName"></label> *@
+                    <label asp-for="Employee"></label>
                 </div>
                 <div class="col-8">
-                    @* <select asp-for="EmployeeName" class="form-control"></select> *@
+                    <select asp-for="Employee" class="form-control">
+                        <option></option>
+                    </select>
                 </div>
             </div>
             <div class="form-group row">

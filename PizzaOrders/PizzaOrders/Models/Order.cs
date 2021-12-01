@@ -13,7 +13,6 @@ namespace PizzaOrders.Models
         [DisplayName("Date Time")]
         public DateTime DateTime { get; set; }
         
-
         public string Pizza { get; set; }
 
         public string Drink { get; set; }
