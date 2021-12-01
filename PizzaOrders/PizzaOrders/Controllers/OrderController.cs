@@ -17,6 +17,12 @@ namespace PizzaOrders.Controllers
         {
             _db = db;
         }
+
+        public IActionResult Index()
+        {
+            IEnumerable<Order> orderList = _db.Orders;
+            return View(orderList);
+        }
         
         
         // Get - CREATE
