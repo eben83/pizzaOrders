@@ -14,7 +14,7 @@ namespace PizzaOrders.Migrations
                     EmployeeId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
-                    Department = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Department = table.Column<string>(type: "nvarchar(100)", nullable: true)
                 },
                 constraints: table =>
                 {

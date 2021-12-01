@@ -27,7 +27,7 @@ namespace PizzaOrders.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Department")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Name")
                         .HasMaxLength(100)
@@ -55,7 +55,7 @@ namespace PizzaOrders.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Pizza")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(100)");
 
                     b.HasKey("Id");
 
