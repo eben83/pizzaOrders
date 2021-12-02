@@ -14,7 +14,12 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Areas" />
       <Folder Include="Migrations" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Areas\BlackJack\Views\BlackJack\Index.cshtml" />
     </ItemGroup>
 
 </Project>

@@ -1,0 +1,18 @@
+﻿@using System.Formats.Asn1
+
+@{
+    ViewBag.Title = "Black Jack";
+    Layout = "_Layout";
+}
+
+<h2>Black Jack</h2>
+<div class="container d-flex justify-content-around">
+        @if (@Model == null)
+        {
+            <h1>Play</h1>
+        }
+        <div>
+            @Html.ActionLink("Play", "Game", "BlackJack", null, new {@class="btn btn-primary text-white w-100"})
+            @*<a asp-controller="BlackJack" asp-action="Game" class="btn btn-primary text-white w-100">Play</a>*@
+        </div>
+</div>

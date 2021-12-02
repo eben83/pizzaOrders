@@ -1,0 +1,58 @@
+﻿@using System.Diagnostics
+@model PizzaOrders.Areas.BlackJack.Models.BlackJackModel
+
+@{
+    ViewBag.Title = "Black Jack Game";
+    Layout = "_Layout";
+}
+
+<h2>Black Jack Game</h2>
+
+
+@using (Html.BeginForm("Game", "BlackJack", FormMethod.Post))
+{
+string stylePlayer = @Model.Result == 21 ? "background-color:Green;" : @Model.Result >= 22 ? "background-color:Red;" : null;
+string styleDealer = @Model.DealerResult == 21 ? "background-color:Green;" : @Model.DealerResult >= 22 ? "background-color:Red;" : null;
+    <h1 class="text-center">Player</h1>
+    <div class="container d-flex justify-content-around h-100">
+        <div class="card w-25 d-flex flex-column">
+            <div class="card-body text-center">
+                @Model.NumberOne
+            </div>
+        </div>
+        <div class="card w-25">
+            <div class="card-body text-center">
+                @Model.NumberTwo
+            </div>
+        </div>
+        <div class="card w-25" style="@stylePlayer">
+            <div class="card-body text-center">
+                @Model.Result
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center">Dealer</h1>
+    <div class="container d-flex justify-content-around h-100">
+        <div class="card w-25 d-flex flex-column">
+            <div class="card-body text-center">
+                @Model.DealerNumberOne
+            </div>
+        </div>
+        <div class="card w-25">
+            <div class="card-body text-center">
+                @Model.DealerNumberTwo
+            </div>
+        </div>
+        <div class="card w-25" style="@styleDealer">
+            <div class="card-body text-center">
+                @Model.DealerResult
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <button type="submit">Pull!</button>
+    </div>
+    <div>
+       <h1> @Model.Winner</h1>
+    </div>
+}
